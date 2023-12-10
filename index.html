@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: 'Roboto Serif', serif;
+
+        }
+
+
+        #main {
+            width: 90%;
+            /* Adjust the width as needed */
+            margin: 0 auto;
+            /* Center the div horizontally */
+            margin-left: 5%;
+            margin-right: 5%;
+            background-color: rgb(15, 14, 14);
+            padding-top: 100px;
+        }
+
+        #navtop {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #navtop a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            margin-top: 50px;
+            font-family: 'Kalnia', serif;
+        }
+
+        #hrtop {
+            width: 70%;
+            margin: 0 auto;
+            border: 1px solid #333;
+            margin-top: 50px;
+        }
+
+        #pt1 {
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+
+
+            width: 90%;
+            /* Adjust the width as needed */
+            margin: 0 auto;
+            /* Center the div horizontally */
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        #v1 {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #sec1 {
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        .icons {
+            text-align: center;
+        }
+
+        .icons i {
+            margin: 0 10px;
+        }
+
+        #pt2 {
+
+            text-align: center;
+            background-color: rgb(15, 14, 14);
+            width: 90%;
+            /* Adjust the width as needed */
+            margin: 0 auto;
+            /* Center the div horizontally */
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        #pt3 {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        #v2 {
+
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        #pt4 {
+            text-align: center;
+        }
+
+        #pt4 input {
+            width: 35%;
+            background-color: rgb(15, 14, 14);
+            color: rgb(173, 173, 173);
+            border: none;
+            border-bottom: 2px solid rgb(52, 52, 52);
+            padding: 5px;
+            padding-bottom: 10px;
+            margin-bottom: 25px;
+            /* font-family: 'Roboto Serif', serif ; */
+            font-weight: 100;
+            font-size: small;
+        }
+
+        #resb {
+            height: 75px;
+            width: 20%;
+            border-radius: 50px;
+            color: white;
+            background-color: rgb(15, 14, 14);
+            border: solid 1px rgb(52, 52, 52);
+            font-size: 1.2rem;
+            /* font-family: 'Roboto Serif', serif ; */
+        }
+
+        #pt5 {
+            margin-top: 100px;
+        }
+
+        #pt6 {
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        #pt7 {
+            margin-top: 100px;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .hrgen {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 70px;
+            border: 1px solid #333;
+            /* margin-top: 50px; */
+        }
+
+        #pt2 img {
+            height: 380px;
+            width: 380px;
+            border-radius: 100%;
+            border: solid 15px rgb(86, 86, 86);
+            padding: 20px;
+        }
+
+        #navtop .hamburger-icon {
+            display: none;
+        }
+
+        .timestyle {
+            color: rgb(149, 145, 145);
+        }
+
+        .timestyle span {
+            color: red
+        }
+
+        /* res1 */
+
+        .cont {
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        .menuimg {
+            width: 100%;
+            height: 550px;
+        }
+
+        .menubtn {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            border: none;
+            width: 150px;
+            height: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .rwcont1 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .contcol1 {
+            flex: 1;
+            position: relative;
+            margin: 5px;
+        }
+
+        #pt4 h1 {
+            font-weight: 700;
+            margin-top: 100px;
+            font-size: 3rem;
+        }
+
+        #pt6 h1 {
+            font-size: 4em;
+            margin-bottom: 50px;
+        }
+
+        .lrow{
+            width: 100%; 
+            height: 550px;
+        }
+
+
+
+        @media (max-width: 767px) {
+
+            #pt1 {
+                position: relative;
+                overflow: hidden;
+                height: 100vh;
+
+
+                width: 100%;
+                /* Adjust the width as needed */
+                margin: 0 auto;
+                /* Center the div horizontally */
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            #pt2 img {
+                width: 200px;
+                height: 200px;
+                max-width: none;
+                border: solid 9px rgb(86, 86, 86);
+                padding: 15px;
+            }
+
+            #navtop {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+            }
+
+            #navtop a {
+                display: none;
+
+            }
+
+            #navtop img {
+                margin-right: auto;
+
+            }
+
+            #navtop .hamburger-icon {
+                display: inline-block;
+                cursor: pointer;
+                color: white;
+                font-size: 24px;
+            }
+
+            #resb {
+                width: 80%;
+                background-color: black;
+            }
+
+            #main {
+                background-color: black;
+            }
+
+            #pt2 {
+                background-color: black;
+            }
+
+            #pt4 input {
+                background-color: black;
+                width: 80%;
+            }
+
+            .cont {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            #v2 {
+
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+
+            .menuimg {
+                width: 100%;
+                height: 400px;
+            }
+
+            .menubtn {
+                position: absolute;
+                bottom: 30px;
+                left: 30px;
+                border: none;
+                width: 80px;
+                height: 30px;
+                /* font-weight:200; */
+
+            }
+
+            /* res */
+
+            .contcol1 {
+                flex: 100%;
+            }
+
+            #pt4 h1 {
+                font-weight: 700;
+                margin-top: 100px;
+                font-size: 1.5rem;
+            }
+
+            #pt6 h1 {
+                font-size: 2em;
+                margin-bottom: 50px;
+            }
+
+            .brh {
+                display: none;
+            }
+
+            br {
+                display: none;
+            }
+
+            .lrow{
+            width: 100%; 
+            height: 300px;
+        }
+
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div id="pt1">
+        <video id="v1" autoplay muted loop src="./assets/video1.mp4"></video>
+        <nav id="navtop">
+            <a href="#">ABOUT</a>
+            <a href="#">DRINK MENU</a>
+            <img style="height: 70px; width: 70px; border-radius: 100%; vertical-align: middle;" src="./assets/logo.png"
+                alt="">
+            <a href="#">RESERVATION</a>
+            <a href="#">CONTACT</a>
+            <div class="hamburger-icon">&#9776;</div>
+        </nav>
+        <hr id="hrtop">
+        <div id="sec1">
+            <h1 style="font-family: 'Whisper', cursive;">Cocktail Bar</h1>
+            <h1>A vibrant and upscale <br> cocktail bar perfect for <br> any occassion.</h1>
+        </div>
+
+        <div style=" margin-top: 110px;" class="icons">
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+
+    </div>
+    <!-- section 2 -->
+    <div id="main">
+        <div id="pt2">
+            <h1>Our Story</h1>
+            <img src="./assets/p2img.jpg" alt="">
+            <p style="line-height: 30px; margin-top: 30px; color: rgb(156, 153, 153);">A vibrant and upscale cocktail
+                bar perfect for any occasion. Our skilled mixologists craft <br class="brh">
+                unique and delicious cocktails using only the finest ingredients, making sure to cater to <br
+                    class="brh">
+                every palate. Whether you're in the mood for a classic drink or something a bit more <br class="brh">
+                experimental, our diverse menu has something for everyone. Whether you're looking for a <br class="brh">
+                place to unwind after work or celebrate a special occasion, FIVE TWELVE is the perfect <br class="brh">
+                destination. Come join us and experience the perfect blend of delicious cocktails, <br class="brh">
+                perfected small bites, and top-notch service.</p>
+        </div>
+
+        <div id="pt3">
+            <h2 style="font-family: 'Whisper', cursive; margin-bottom: -30px; font-size: 2em;">512</h2>
+            <h1 style="font-weight:700; font-size:3em; margin-bottom: 40px;">Menu</h1>
+            <div class="cont">
+                <div class="rwcont1">
+                    <div class="contcol1" style="position: relative;">
+                        <img class="menuimg" style="margin-bottom: 20px;" src="./assets/food.jpg" alt="">
+                        <button class="menubtn">FOOD</button>
+                    </div>
+                    <div class="contcol1" style="position: relative;">
+                        <img class="menuimg" src="./assets/drinks.jpg" alt="">
+                        <button class="menubtn">DRINKS</button>
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px;">
+                    <video id="v2" autoplay muted loop src="./assets/video2.mp4"></video>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <div id="pt4">
+            <h1>Hire us for your next event!</h1>
+            <p style="color: rgb(156, 153, 153); font-size: small;">Tell us the details below</p>
+            <p><input type="text" placeholder="Enter full name"></p>
+            <p><input type="email" placeholder="Email"></p>
+            <p><input type="text" placeholder="Date"></p>
+            <p><input type="number" placeholder="Number of Guests"></p>
+            <p><input type="text" placeholder="Event Type"></p>
+            <p><input type="text" placeholder="Reservation Time"></p>
+
+            <div><button id="resb">Submit Reservation</button></div>
+        </div>
+
+        <div id="pt5">
+            <div class="rwcont1">
+                <div class="contcol1"><img class="lrow"  src="./assets/gpic1.jpg" alt=""></div>
+                <div class="contcol1"><video class="lrow"  autoplay muted loop style="object-fit: cover;"
+                        src="./assets/gvid.mp4"></video></div>
+                <div class="contcol1"><img class="lrow" src="./assets/gpic2.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <div id="pt6">
+            <h1>Hours</h1>
+            <div class="rwcont1">
+                <div class="contcol1">
+                    <h3>KITCHEN</h3>
+                    <p class="timestyle">Friday | 7pm - 1am</p>
+                    <p class="timestyle">Saturday | 6pm - 1am</p>
+                    <p class="timestyle">Wednesday-Thursday | 7pm - Midnight</p>
+                    <p class="timestyle">Sunday | 6pm - 11pm</p>
+                    <p class="timestyle">Monday - Tuesday | <span>Closed</span></p>
+
+                </div>
+                <div class="contcol1">
+                    <h3>BAR</h3>
+                    <p class="timestyle">Friday | 7pm - 1am</p>
+                    <p class="timestyle">Saturday | 6pm - 1am</p>
+                    <p class="timestyle">Wednesday-Thursday | 7pm - Midnight</p>
+                    <p class="timestyle">Sunday | 6pm - 11pm</p>
+                    <p class="timestyle">Monday - Tuesday | <span>Closed</span></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="pt7">
+            <hr class="hrgen">
+            <p style="color:rgb(156, 153, 153);">Five Twelve512 Anderson AveCliffside Park, New <br>
+                Jersey 07010</p>
+
+            <div class="icons">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <hr style="margin-top: 50px;" class="hrgen">
+            <p style="color:rgb(156, 153, 153);">copyright 2023 five-twelve | Powered by <span
+                    style="color:white;">brandOptics</span></p>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
